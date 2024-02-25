@@ -1,0 +1,114 @@
+@import "Variables.css";
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+#arrow-sequence {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    scale: 60%;
+    flex-wrap: wrap;
+}
+
+.arrow.up,
+.arrow.down {
+    display: inline-block;
+    position: relative;
+    height: 34px;
+}
+
+.arrow.left,
+.arrow.right {
+    display: inline-block;
+    position: relative;
+    width: 34px;
+}
+
+.arrow-tail {
+    position: absolute;
+    background-color: white;
+}
+
+.arrow-tail.complete {
+    background-color: gray;
+}
+
+.arrow-head.up {
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 20px solid white;
+}
+
+.arrow-head.up.complete {
+    border-bottom: 20px solid gray;
+}
+
+.arrow-tail.up {
+    width: 4px;
+    height: 15px;
+    left: 8px;
+    bottom: 0px;
+}
+
+.arrow-head.down {
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 20px solid white;
+    position: relative;
+    bottom: -14px;
+}
+
+.arrow-head.down.complete {
+    border-top: 20px solid gray;
+}
+
+.arrow-tail.down {
+    width: 4px;
+    height: 15px;
+    left: 8px;
+    bottom: 19px;
+}
+
+.arrow-head.left {
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 20px solid white;
+    position: relative;
+    left: -14px;
+}
+
+.arrow-head.left.complete {
+    border-right: 20px solid gray;
+}
+
+.arrow-tail.left {
+    width: 15px;
+    height: 4px;
+    left: 19px;
+    top: 8px;
+}
+
+.arrow-head.right {
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 20px solid white;
+    position: relative;
+    right: -14px;
+}
+
+.arrow-head.right.complete {
+    border-left: 20px solid gray;
+}
+
+.arrow-tail.right {
+    width: 15px;
+    height: 4px;
+    left: 0px;
+    top: 8px;
+}
